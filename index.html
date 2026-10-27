@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
     <meta name="description" content="Pagina da culturama">
+    <link rel="icon" href="culturama-favico.png">
     <title>Pesquisa Culturama</title>
 </head>
 <body>
+    <main>
     <header>
+        <img src="img/logo-culturama.png" alt="Logo culturama">
+        
         <h1>Pesquisa Online</h1>
     </header>
     <section>
@@ -88,51 +96,53 @@
                 <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza">
             </fieldset>
             <fieldset>
-                <legend>Hábitos</legend>
-                <p>Redes Sociais</p>
-                <input id="instagram" type="checkbox" name="social" value="instagram">
-                <label for="instagram">Instagram</label>
-                <br>
-                <input id="facebook" type="checkbox" name="social" value="facebook">
-                <label for="facebook">facebook</label>
-                <br>
-                <input id="linkedin" type="checkbox" name="social" value="linkedin">
-                <label for="linkedin">Linkedin</label>
-                <br>
-                <input id="x" type="checkbox" name="social" value="x">
-                <label for="x">X</label>
-                <br>
-                <label for="musicStyle">Estilo musical</label>
-                <input list="styleType" id="musicStyle" name="userMusicStyle" type="text">
-                <datalist id="styleType">
-                    <option value="Rock">
-                    <option value="Piseiro">
-                    <option value="Classica">
-                    <option value="Pagode">
-                </datalist>
-                <br>
-                <label for="favoriteColor">Cor favorita</label>
-                <input id="favoriteColor" type="color" name="userFavoriteColor">
-
-            </fieldset>
-            <fieldset>
-                <legend>Opinião</legend>
-                <p>Satisfação</p>
-                <input id="otima" type="radio" name="userSatisfacao" value="Otima">
-                <label for="otima">Otima</label>
-                <input id="boa" type="radio" name="userSatisfacao" value="Boa">
-                <label for="boa">Boa</label>
-                <input id="regular" type="radio" name="userSatisfacao" value="Regular">
-                <label for="regular">Regular</label>
-                <input id="ruim" type="radio" name="userSatisfacao" value="Ruim">
-                <label for="ruim">Ruim</label>
-                <br>
-                <label for="comentario">O que voçê acha do nosso atendimento:</label>
-                <br>
-                <textarea id="comentario" name="userComentario" cols="50" rows="4">Nos de seu comentario aqui.</textarea>
-            </fieldset>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+                 <legend>Hábitos</legend>
+                 <p>Redes Sociais</p>
+                 <input id="instagram" type="checkbox" name="social" value="instagram">
+                 <label for="instagram">Instagram</label>
+                 <br>
+                 <input id="facebook" type="checkbox" name="social" value="facebook">
+                 <label for="facebook">facebook</label>
+                 <br>
+                 <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                 <label for="linkedin">Linkedin</label>
+                 <br>
+                 <input id="x" type="checkbox" name="social" value="x">
+                 <label for="x">X</label>
+                 <br>
+                 <label for="musicStyle">Estilo musical</label>
+                 <input list="styleType" id="musicStyle" name="userMusicStyle" type="text">
+                 <datalist id="styleType">
+                     <option value="Rock">
+                     <option value="Piseiro">
+                     <option value="Classica">
+                     <option value="Pagode">
+                 </datalist>
+                 <br>
+                 <label for="favoriteColor">Cor favorita</label>
+                 <input id="favoriteColor" type="color" name="userFavoriteColor">
+    
+             </fieldset>
+             <fieldset>
+                    <legend>Opinião</legend>
+                    <p>Satisfação</p>
+                    <input id="otima" type="radio" name="userSatisfacao" value="Otima">
+                    <label for="otima">Otima</label>
+                    <input id="boa" type="radio" name="userSatisfacao" value="Boa">
+                    <label for="boa">Boa</label>
+                    <input id="regular" type="radio" name="userSatisfacao" value="Regular">
+                    <label for="regular">Regular</label>
+                    <input id="ruim" type="radio" name="userSatisfacao" value="Ruim">
+                    <label for="ruim">Ruim</label>
+                    <br>
+                    <label for="comentario">O que voçê acha do nosso atendimento:</label>
+                    <br>
+                    <textarea id="comentario" name="userComentario" cols="50" rows="4">Nos de seu comentario aqui.</textarea>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
